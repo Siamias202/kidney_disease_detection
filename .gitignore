@@ -1,0 +1,3 @@
+artifacts/*
+
+cython_debug/
