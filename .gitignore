@@ -1,4 +1,6 @@
 artifacts/*
 
 cython_debug/
-
+.ipynb_checkpoints
+*.egg-info/
+__pycache__/
