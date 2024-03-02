@@ -1,9 +1,5 @@
 import streamlit as st
-from tensorflow.keras.models import load_model
-import numpy as np
-import cv2
-import os
-from PIL import Image
+from cnnClassifier.pipeline.prediction import PredictionPipeline
 
 def resize_image(image, target_size):
     # Resize the image
@@ -19,16 +15,17 @@ def main():
 
     if file:
         # Display the uploaded image
-        st.image(file, caption='Uploaded Image.', use_column_width=True)
+        st.image(file, caption='Uploaded Image.', use_column_width="auto",width=100,)
 
         # Resize the image to [224, 224, 3]
-        target_size = (224, 224, 3)
-        pil_image = Image.open(file)
-        resized_image = resize_image(pil_image, target_size)
+        prediction_output=PredictionPipeline(file)
+        output=prediction_output.predict()
+        st.write(f"Prediction: {output}")
 
-        # Display the resized image
-        
-        model = load_model("E:\ML Project\kidney_disease_detection\artifacts\prepare_base_model\base_model_updated.h5")
+    else:
+        st.text("You have not uploaded an image yet")    
 
-        predictions = model.predict(resize_image)
+
+if __name__=="__main__":
+    main()
 

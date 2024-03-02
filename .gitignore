@@ -5,5 +5,5 @@ cython_debug/
 *.egg-info/
 __pycache__/
 
-dvc.lock
+
 .dvc/
