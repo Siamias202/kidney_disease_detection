@@ -434,3 +434,42 @@ x==========x]
 [2024-03-01 22:03:20,599: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-03-02 11:27:31,302: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 11:27:31,305: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 11:27:31,307: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 11:27:31,308: INFO: common: created directory at: artifacts]
+[2024-03-02 11:27:31,308: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 11:27:31,308: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-02 11:28:26,034: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-02 11:28:26,651: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-02 11:28:44,466: INFO: stage_02_prepare_base_model: *******************]
+[2024-03-02 11:28:44,467: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-03-02 11:28:44,470: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 11:28:44,472: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 11:28:44,472: INFO: common: created directory at: artifacts]
+[2024-03-02 11:28:44,472: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-02 11:28:45,143: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-02 11:28:45,430: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-03-02 11:28:52,338: INFO: stage_03_model_training: *******************]
+[2024-03-02 11:28:52,339: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2024-03-02 11:28:52,341: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 11:28:52,345: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 11:28:52,345: INFO: common: created directory at: artifacts]
+[2024-03-02 11:28:52,346: INFO: common: created directory at: artifacts\training]
+[2024-03-02 11:35:49,915: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-02 11:35:58,995: INFO: stage_04_model_evaluation: *******************]
+[2024-03-02 11:35:58,996: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-02 11:35:58,998: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 11:35:59,000: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 11:35:59,000: INFO: common: created directory at: artifacts]
+[2024-03-02 11:36:13,060: INFO: common: json file saved at: scores.json]
+[2024-03-02 11:36:13,061: INFO: common: json file saved at: scores.json]
+[2024-03-02 11:36:13,062: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
