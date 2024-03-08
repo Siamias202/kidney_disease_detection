@@ -475,3 +475,212 @@ x==========x]
 x==========x]
 [2024-03-02 12:33:51,605: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000019E14295B40> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
 [2024-03-02 12:34:05,510: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000019E14295AB0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-02 13:59:15,346: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001BD1DD1AE60> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-08 18:46:35,943: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001D706986830> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-08 18:46:45,544: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001D706985870> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-08 19:05:34,107: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2024-03-08 19:05:34,108: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 19:05:40,000: INFO: _internal: 192.168.0.103 - - [08/Mar/2024 19:05:40] "GET / HTTP/1.1" 200 -]
+[2024-03-08 19:06:15,394: INFO: _internal: 192.168.0.103 - - [08/Mar/2024 19:06:15] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 19:07:26,882: INFO: _internal: 192.168.0.103 - - [08/Mar/2024 19:07:26] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 19:07:44,166: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2024-03-08 19:07:44,168: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 19:07:47,856: INFO: _internal: 192.168.0.103 - - [08/Mar/2024 19:07:47] "GET / HTTP/1.1" 200 -]
+[2024-03-08 19:07:55,391: INFO: _internal: 192.168.0.103 - - [08/Mar/2024 19:07:55] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 19:08:43,276: INFO: _internal: 192.168.0.103 - - [08/Mar/2024 19:08:43] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 19:10:56,441: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-08 19:10:56,457: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-08 19:10:56,461: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-08 19:10:56,462: INFO: common: created directory at: artifacts]
+[2024-03-08 19:10:56,463: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-08 19:10:56,464: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-08 19:10:59,794: ERROR: main: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3
+
+but Gdown can't. Please check connections and permissions.]
+Traceback (most recent call last):
+  File "D:\Anaconda_envs\envs\myenv\lib\site-packages\gdown\download.py", line 221, in download
+    url = get_url_from_gdrive_confirmation(res.text)
+  File "D:\Anaconda_envs\envs\myenv\lib\site-packages\gdown\download.py", line 47, in get_url_from_gdrive_confirmation
+    raise FileURLRetrievalError(
+gdown.exceptions.FileURLRetrievalError: Cannot retrieve the public link of the file. You may need to change the permission to 'Anyone with the link', or have had many accesses.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\ML Project\kidney_disease_detection\main.py", line 14, in <module>
+    data_ingestion.main()
+  File "e:\ml project\kidney_disease_detection\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "e:\ml project\kidney_disease_detection\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "e:\ml project\kidney_disease_detection\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "D:\Anaconda_envs\envs\myenv\lib\site-packages\gdown\download.py", line 232, in download
+    raise FileURLRetrievalError(message)
+gdown.exceptions.FileURLRetrievalError: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3
+
+but Gdown can't. Please check connections and permissions.
+[2024-03-08 19:11:32,856: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-08 19:11:32,861: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-08 19:11:32,868: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-08 19:11:32,869: INFO: common: created directory at: artifacts]
+[2024-03-08 19:11:32,870: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-08 19:11:32,871: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-08 19:11:35,425: ERROR: main: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3
+
+but Gdown can't. Please check connections and permissions.]
+Traceback (most recent call last):
+  File "D:\Anaconda_envs\envs\myenv\lib\site-packages\gdown\download.py", line 221, in download
+    url = get_url_from_gdrive_confirmation(res.text)
+  File "D:\Anaconda_envs\envs\myenv\lib\site-packages\gdown\download.py", line 47, in get_url_from_gdrive_confirmation
+    raise FileURLRetrievalError(
+gdown.exceptions.FileURLRetrievalError: Cannot retrieve the public link of the file. You may need to change the permission to 'Anyone with the link', or have had many accesses.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\ML Project\kidney_disease_detection\main.py", line 14, in <module>
+    data_ingestion.main()
+  File "e:\ml project\kidney_disease_detection\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "e:\ml project\kidney_disease_detection\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "e:\ml project\kidney_disease_detection\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "D:\Anaconda_envs\envs\myenv\lib\site-packages\gdown\download.py", line 232, in download
+    raise FileURLRetrievalError(message)
+gdown.exceptions.FileURLRetrievalError: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3
+
+but Gdown can't. Please check connections and permissions.
+[2024-03-08 19:15:00,016: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-08 19:15:00,021: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-08 19:15:00,024: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-08 19:15:00,024: INFO: common: created directory at: artifacts]
+[2024-03-08 19:15:00,025: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-08 19:15:00,025: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-08 19:15:03,274: ERROR: main: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3
+
+but Gdown can't. Please check connections and permissions.]
+Traceback (most recent call last):
+  File "D:\Anaconda_envs\envs\myenv\lib\site-packages\gdown\download.py", line 221, in download
+    url = get_url_from_gdrive_confirmation(res.text)
+  File "D:\Anaconda_envs\envs\myenv\lib\site-packages\gdown\download.py", line 47, in get_url_from_gdrive_confirmation
+    raise FileURLRetrievalError(
+gdown.exceptions.FileURLRetrievalError: Cannot retrieve the public link of the file. You may need to change the permission to 'Anyone with the link', or have had many accesses.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\ML Project\kidney_disease_detection\main.py", line 14, in <module>
+    data_ingestion.main()
+  File "e:\ml project\kidney_disease_detection\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "e:\ml project\kidney_disease_detection\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "e:\ml project\kidney_disease_detection\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "D:\Anaconda_envs\envs\myenv\lib\site-packages\gdown\download.py", line 232, in download
+    raise FileURLRetrievalError(message)
+gdown.exceptions.FileURLRetrievalError: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3
+
+but Gdown can't. Please check connections and permissions.
+[2024-03-08 19:16:22,957: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-08 19:16:22,960: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-08 19:16:22,962: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-08 19:16:22,963: INFO: common: created directory at: artifacts]
+[2024-03-08 19:16:22,963: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-08 19:16:22,963: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-08 19:16:25,141: ERROR: main: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3
+
+but Gdown can't. Please check connections and permissions.]
+Traceback (most recent call last):
+  File "D:\Anaconda_envs\envs\myenv\lib\site-packages\gdown\download.py", line 221, in download
+    url = get_url_from_gdrive_confirmation(res.text)
+  File "D:\Anaconda_envs\envs\myenv\lib\site-packages\gdown\download.py", line 47, in get_url_from_gdrive_confirmation
+    raise FileURLRetrievalError(
+gdown.exceptions.FileURLRetrievalError: Cannot retrieve the public link of the file. You may need to change the permission to 'Anyone with the link', or have had many accesses.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\ML Project\kidney_disease_detection\main.py", line 14, in <module>
+    data_ingestion.main()
+  File "e:\ml project\kidney_disease_detection\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "e:\ml project\kidney_disease_detection\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "e:\ml project\kidney_disease_detection\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "D:\Anaconda_envs\envs\myenv\lib\site-packages\gdown\download.py", line 232, in download
+    raise FileURLRetrievalError(message)
+gdown.exceptions.FileURLRetrievalError: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3
+
+but Gdown can't. Please check connections and permissions.
+[2024-03-08 19:17:46,682: INFO: stage_03_model_training: *******************]
+[2024-03-08 19:17:46,683: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2024-03-08 19:17:46,685: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-08 19:17:46,688: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-08 19:17:46,688: INFO: common: created directory at: artifacts]
+[2024-03-08 19:17:46,689: INFO: common: created directory at: artifacts\training]
